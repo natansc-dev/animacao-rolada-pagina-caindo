@@ -91,7 +91,6 @@ section.quatro {
 }
 
 .container .col .img {
-  width: 36%;
   height: auto;
   aspect-ratio: 4/5;
   overflow: hidden;
@@ -105,6 +104,41 @@ section.quatro {
 
 .dois .container .col:nth-child(1),
 .tres .container .col:nth-child(2) {
+  justify-content: center;
+  align-items: center;
+}
+
+.dois .container .col:nth-child(2),
+.tres .container .col:nth-child(1) {
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.quatro .container {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+}
+
+.quatro .img {
+  width: 32%;
+  margin-bottom: 4rem;
+}
+
+.quatro p {
+  width: 52%;
+}
+
+main footer {
+  position: relative;
+  width: 100%;
+  height: 70svh;
+  padding: 2rem;
+  background-color: #0f0f0f;
+  color: white;
+  display: flex;
   justify-content: center;
   align-items: center;
 }
