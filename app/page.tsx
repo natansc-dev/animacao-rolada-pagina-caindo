@@ -69,12 +69,11 @@ export default function Home() {
         <section className="um">
           <div className="container max-w-full">
             <div className="col">
-              <h1>Hello World</h1>
+              <h1>E se seu site fosse assim?</h1>
             </div>
             <div className="col">
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Quisquam, quos.
+                Scroll experience concept, onde cada movimento é pensado para criar uma experiência única.
               </p>
             </div>
           </div>
@@ -84,7 +83,7 @@ export default function Home() {
         <section className="dois">
           <div className="container max-w-full">
             <div className="col">
-              <div className="img">
+              <div className="img rounded-4xl">
                 <Image
                   src="/dois.png"
                   alt="Image"
@@ -95,10 +94,9 @@ export default function Home() {
               </div>
             </div>
             <div className="col">
-              <h1>Lorem ipsum</h1>
+              <h1>Não é só design, É movimento.</h1>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Quisquam, quos.
+                O scroll deixa de ser navegação. Vira narrativa.
               </p>
             </div>
           </div>
@@ -108,16 +106,13 @@ export default function Home() {
         <section className="tres">
           <div className="container max-w-full">
             <div className="col">
-              <h1>Lorem ipsum</h1>
+              <h1>Narrativa guiada por scroll</h1>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Quisquam, quos.
+                Cada transição é pensada para guiar a atenção.
               </p>
             </div>
-            <div className="col">
-              <div className="img">
-                <Image src="/tres.png" alt="Image" width={1200} height={904} />
-              </div>
+            <div className="col flex justify-center items-center">
+              <Image src="/tres.png" alt="Image" width={1200} height={904} className="rounded-4xl" />
             </div>
           </div>
         </section>
@@ -126,16 +121,14 @@ export default function Home() {
         <section className="quatro">
           <div className="container max-w-full">
             <div className="img">
-              <Image src="/quatro.png" alt="Image" width={900} height={1200} />
+              <Image src="/quatro.png" alt="Image" width={900} height={1200} className="rounded-4xl" />
             </div>
-            <h1>Lorem ipsum</h1>
+            <h1>Experiência que prende atenção</h1>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
-              quos.
+              Experiências não são estáticas.
             </p>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
-              quos.
+              Cada transição existe para manter atenção, e transformar curiosidade em permanência.
             </p>
           </div>
         </section>
@@ -144,12 +137,11 @@ export default function Home() {
         <section className="cinco">
           <div className="container max-w-full">
             <div className="col">
-              <h1>Hello World</h1>
+              <h1>Você usaria algo assim no seu projeto?</h1>
             </div>
             <div className="col">
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Quisquam, quos.
+                Movimento gera percepção. Percepção gera valor.
               </p>
             </div>
           </div>
@@ -159,19 +151,18 @@ export default function Home() {
         <section className="seis">
           <div className="container max-w-full">
             <div className="col">
-              <h1>Hello World</h1>
+              <h1>O FUTURO É INTERATIVO</h1>
             </div>
             <div className="col">
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Quisquam, quos.
+                E isso é só o começo.
               </p>
             </div>
           </div>
         </section>
 
         <footer>
-          <h1>Footer</h1>
+          <h1>Me segue aí</h1>
         </footer>
       </main>
     </>
