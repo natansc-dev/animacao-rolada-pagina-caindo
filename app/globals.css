@@ -8,6 +8,7 @@
   --color-base-500: #bc4749;
   --color-base-600: #c2c1c2;
 }
+
 /* esconde a scrollbar */
 ::-webkit-scrollbar {
   display: none;
@@ -68,18 +69,22 @@ section.quatro {
   background-color: var(--color-base-200);
   color: white;
 }
+
 .tres .container {
   background-color: var(--color-base-300);
   color: black;
 }
+
 .quatro .container {
   background-color: var(--color-base-400);
   color: black;
 }
+
 .cinco .container {
   background-color: var(--color-base-500);
   color: white;
 }
+
 .seis .container {
   background-color: var(--color-base-600);
   color: black;
@@ -141,4 +146,55 @@ main footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: clamp(3rem, 15vw, 6rem);
+  }
+
+  p {
+    font-size: 1.25rem;
+  }
+
+  .container {
+    flex-direction: column;
+    padding: 1rem;
+    transform: rotate(0deg);
+    /* Remove rotation on mobile for better readability */
+  }
+
+  .container .col {
+    width: 100%;
+    flex: auto;
+    /* Allow auto sizing */
+  }
+
+  .um .container .col:nth-child(2),
+  .cinco .container .col:nth-child(2),
+  .seis .container .col:nth-child(2) {
+    align-items: flex-start;
+    /* Reset alignment */
+  }
+
+  .dois .container .col:nth-child(2),
+  .tres .container .col:nth-child(1) {
+    flex-direction: column-reverse;
+    /* Stack images/text logically */
+    gap: 2rem;
+  }
+
+  .quatro .container {
+    text-align: left;
+    align-items: flex-start;
+  }
+
+  .quatro .img {
+    width: 80%;
+    margin-bottom: 2rem;
+  }
+
+  .quatro p {
+    width: 100%;
+  }
 }
